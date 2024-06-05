@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import pic from "../../../public/wallpaper.jpg";
-import NavBar from "../Components/NavBar/Navbar";
+import NavBar from "@/components/NavBar/Navbar";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -28,7 +29,9 @@ const Home = () => {
                 Download
               </button>
               <button className="text-[16px] px-4 py-2 bg-green-500 text-white rounded">
+                <Link href='/login'>
                 Sign In
+                </Link>
               </button>
             </div>
           </div>
